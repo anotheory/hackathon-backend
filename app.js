@@ -10,7 +10,7 @@ app.use(express.json())
 const healthcheckRouter = require('./routes/healthcheck-router')
 
 
-app.use('/healthcheck', healthcheckRouter)
+app.use('/', healthcheckRouter)
 // app.use('/users', usersRouter)
 
 console.log(`App is currently listening at port [${appConfig.port}]\n`)
